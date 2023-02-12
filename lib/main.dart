@@ -5,6 +5,7 @@ import 'package:sleepwellfrontend/screen/SignUp/signupScreen.dart';
 import 'package:sleepwellfrontend/screen/SignUp/welcomeScreen.dart';
 import 'package:sleepwellfrontend/screen/home/homeScreen.dart';
 import 'package:sleepwellfrontend/screen/profile/profileScreen.dart';
+import 'package:sleepwellfrontend/screen/rewards/rewardsScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,10 +36,15 @@ class MyApp extends StatelessWidget {
       ),
       //home:HomeScreen(user:user), //Arosha
 
-      home:const WelComeScreen(),     //sasni
-      //home:SignUpScreen(),      //sasni
+     home:const WelComeScreen(),     //sasni
+     
+    // home:SignUpScreen(),      //sasni
 
-     // home:ProfileScreen(),     //naflan
+    // home:ProfileScreen(),     //naflan
+    
+    // home:RewardsScreen(),      //janith
+
+    // home:NotificationScreen(),  //janith
 
       debugShowCheckedModeBanner: false,
     );
