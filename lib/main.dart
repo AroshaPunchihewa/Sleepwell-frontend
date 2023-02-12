@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sleepwellfrontend/models/User.dart';
 import 'package:sleepwellfrontend/rout/routsname.dart';
+import 'package:sleepwellfrontend/screen/SignUp/signupScreen.dart';
+import 'package:sleepwellfrontend/screen/SignUp/welcomeScreen.dart';
 import 'package:sleepwellfrontend/screen/home/homeScreen.dart';
+import 'package:sleepwellfrontend/screen/profile/profileScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +33,13 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:HomeScreen(user:user),
+      //home:HomeScreen(user:user), //Arosha
+
+      home:const WelComeScreen(),     //sasni
+      //home:SignUpScreen(),      //sasni
+
+     // home:ProfileScreen(),     //naflan
+
       debugShowCheckedModeBanner: false,
     );
   }
