@@ -2,8 +2,12 @@
 import 'package:flutter/material.dart';
 
 class SummeryBox extends StatelessWidget {
+  final String topic;
+  final String info;
   const SummeryBox({
     Key? key,
+    required this.topic,
+    required this.info,
   }) : super(key: key);
 
   @override
@@ -29,7 +33,7 @@ class SummeryBox extends StatelessWidget {
                     child: Row(
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
-                    Text("Sleep Score",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                    Text(topic,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
                     
     ]
                     ),
@@ -42,7 +46,7 @@ class SummeryBox extends StatelessWidget {
                     child: Row(
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
-                    Text("88",style: TextStyle(fontSize: 40,fontWeight: FontWeight.w800),),
+                    Text(info,style: TextStyle(fontSize: 40,fontWeight: FontWeight.w800),),
                     
     ]
                     ),

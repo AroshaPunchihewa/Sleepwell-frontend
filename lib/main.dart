@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sleepwellfrontend/models/User.dart';
+import 'package:sleepwellfrontend/rout/routsname.dart';
 import 'package:sleepwellfrontend/screen/home/homeScreen.dart';
 
 void main() {
@@ -6,11 +8,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+                    
+
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    var user = User();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -25,7 +30,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home:HomeScreen(user:user),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,19 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:intl/intl.dart';
+import 'package:sleepwellfrontend/models/User.dart';
+import 'package:sleepwellfrontend/services/Services_User.dart';
 import 'package:sleepwellfrontend/widget/button.dart';
 import 'package:sleepwellfrontend/widget/summeryBox.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  User user;
+   HomeScreen({super.key,required this.user});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  DateTime now = DateTime.now();
+  
+  User? user;
+  @override
+  void initState() {
+    // TODO: implement initState
+    getVehicleService();
+  }
+
+  getVehicleService() async {
+    user = (await ServiceUser.fetchUser("003"));
+    setState(() {});
+  }
   @override
   Widget build(BuildContext context) {
+    String formattedDate = DateFormat.yMMMEd().format(now);
+    String time = DateFormat.jm().format(DateTime.now());
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
     items: const <BottomNavigationBarItem>[
@@ -47,14 +66,15 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 
                 children:[
-                  Column(
+                  Row(
                     
-                    children:const [
+                    children: [
                       Padding(
                         padding: EdgeInsets.only(left: 8),
                         child: Text("Good Morning!",style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
                       ),
-                      Text("User Name",style:TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
+                      SizedBox(width: 10,),
+                      Text(user!.name.toString(),style:TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
                       
 
                     ]
@@ -64,14 +84,33 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 ]
               ),
-              const Padding(
-                padding: EdgeInsets.only(right:270),
-                child: Text("09.42 AM"),
+              
+             Row(
+              children:[
+                Column(
+                  children:[
+              Padding(
+                padding: EdgeInsets.only(left:8),
+                child: Text(time),
               ),
-              const Padding(
-                padding: EdgeInsets.only(right:150),
-             child: Text("Wednesday 04th Jan, 2023"),
+              
+                  ]
+                )
+              ]
+             ),
+             Row(
+              children:[
+                Column(
+                  children:[
+              
+              Padding(
+                padding: EdgeInsets.only(left:8),
+             child: Text(formattedDate),
               )
+                  ]
+                )
+              ]
+             )
                 ]
               ),
               SizedBox(height: 30,),
@@ -153,9 +192,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: const EdgeInsets.only(left: 25,right: 25),
                     child: Row(
                       children: [
-                        SummeryBox(),
+                        SummeryBox(
+                          topic: "Sleep Score",
+                          info: "100",
+                        ),
                         Spacer(),
-                        SummeryBox(),
+                        SummeryBox(
+                          topic: "Average mood",
+                          info: "hi",
+                        ),
                       ],
                     ),
                   ),
@@ -164,9 +209,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: const EdgeInsets.only(left: 25,right: 25),
                     child: Row(
                       children: [
-                        SummeryBox(),
+                        SummeryBox(
+                          topic: "Sleep duration",
+                          info: "9"
+                        ),
                         Spacer(),
-                        SummeryBox(),
+                        SummeryBox(
+                          topic: "Sleep duration",
+                          info: "5",
+                        ),
                       ],
                     ),
                   ),
