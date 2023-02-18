@@ -1,13 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:sleepwellfrontend/models/User.dart';
 import 'package:sleepwellfrontend/rout/routsname.dart';
 import 'package:sleepwellfrontend/screen/SignUp/signupScreen.dart';
 import 'package:sleepwellfrontend/screen/SignUp/welcomeScreen.dart';
+import 'package:sleepwellfrontend/screen/alarm/alarmScreen.dart';
+import 'package:sleepwellfrontend/screen/charts/chartScreen.dart';
 import 'package:sleepwellfrontend/screen/home/homeScreen.dart';
 import 'package:sleepwellfrontend/screen/profile/profileScreen.dart';
 import 'package:sleepwellfrontend/screen/rewards/rewardsScreen.dart';
 
-void main() {
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+   
+   var initializationSettingsAndroid = AndroidInitializationSettings('folder');
+
+   
+   var initializationSettingsIOS = DarwinInitializationSettings(
+    requestAlertPermission: true,
+    requestBadgePermission: true,
+    requestSoundPermission: true,
+    onDidReceiveLocalNotification:(int? id,String? title,String? body,String? playload)async{}
+   );
+   var initializationSettings = InitializationSettings(android: initializationSettingsAndroid,iOS:initializationSettingsIOS);
+   await flutterLocalNotificationsPlugin.initialize(initializationSettings,
+   onDidReceiveNotificationResponse: (NotificationResponse notificationResponse)async{}
+   );
+    
+
   runApp(const MyApp());
 }
 
@@ -34,9 +57,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      //home:HomeScreen(user:user), //Arosha
+     // home:HomeScreen(user:user), //Arosha
 
-     home:const WelComeScreen(),     //sasni
+     // home:AlarmScreen(),
+      home:ChartScreen(),
+
+     //home:const WelComeScreen(),     //sasni
      
     // home:SignUpScreen(),      //sasni
 

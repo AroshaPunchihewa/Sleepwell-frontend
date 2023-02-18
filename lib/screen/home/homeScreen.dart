@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   getVehicleService() async {
-    user = (await ServiceUser.fetchUser("003"));
+    user = (await ServiceUser.fetchUser("005"));
     setState(() {});
   }
   @override
@@ -38,11 +38,12 @@ class _HomeScreenState extends State<HomeScreen> {
     items: const <BottomNavigationBarItem>[
       BottomNavigationBarItem(
         icon: Icon(Icons.home,color: Colors.black,),
-        label: 'Calls',
+        label: 'home',
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.bar_chart,color: Colors.black,),
         label: 'Camera',
+        
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.notifications,color: Colors.black,),
@@ -80,7 +81,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     ]
                   ),
                   const Spacer(),
-                  Image.asset("assets/images/propic.jpeg",width: 60,height: 60,),
+                  CircleAvatar(
+                    child:ClipOval(
+                    child: Image.asset("assets/images/propic.jpeg",width: 60,height: 60,fit: BoxFit.cover,)
+                    ),
+                  )
 
                 ]
               ),
@@ -130,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   buttonText: "Alarm",
                   buttonWidth: 150,
                   buttonHight: 55,
-                  backgroundColor: Color.fromARGB(255, 157, 113, 223),
+                  backgroundColor: Color.fromRGBO(255, 201, 60, 1),
                   ),
                   SizedBox(height: 20,),
                   Padding(
