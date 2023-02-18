@@ -12,6 +12,10 @@
         "source": "/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/app/intermediates/merged_res/debug/drawable_folder.png.flat",
+        "source": "/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/res/drawable/folder.png"
+    },
+    {
         "merged": "/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/app/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
