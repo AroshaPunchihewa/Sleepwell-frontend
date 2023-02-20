@@ -26,6 +26,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "charts_common",
+      "rootUri": "file:///Users/aroshapunchihewa/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/charts_common-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "charts_flutter",
+      "rootUri": "file:///Users/aroshapunchihewa/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/charts_flutter-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///Users/aroshapunchihewa/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.1",
       "packageUri": "lib/",
@@ -138,6 +150,12 @@
       "rootUri": "file:///Users/aroshapunchihewa/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///Users/aroshapunchihewa/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "matcher",
@@ -296,7 +314,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-02-18T14:52:55.047197Z",
+  "generated": "2023-02-19T07:36:30.792704Z",
   "generator": "pub",
   "generatorVersion": "2.18.5"
 }
