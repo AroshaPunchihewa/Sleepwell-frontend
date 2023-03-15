@@ -57,10 +57,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-     // home:HomeScreen(user:user), //Arosha
+     home:HomeScreen(user:user), //Arosha
 
      // home:AlarmScreen(),
-      home:ChartScreen(),
+     // home:ChartScreen(),
 
      //home:const WelComeScreen(),     //sasni
      
