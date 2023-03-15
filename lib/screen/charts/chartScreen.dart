@@ -88,7 +88,9 @@ class _ChartScreenState extends State<ChartScreen> {
                   ),
                 ],
               ),
-              SleepAtChart(sleepAtPoint: sleepAt),
+              SizedBox(height: 10,),
+              SleepAtLineChartWidget(sleepAtPoint: sleepAt,),
+              //SleepAtChart(sleepAtPoint: sleepAt),
               SizedBox(height: 15,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -100,8 +102,9 @@ class _ChartScreenState extends State<ChartScreen> {
                 ],
               ),
               
-              
-              SleepAtChart(sleepAtPoint: sleepAt),
+              SizedBox(height: 10,),
+              WeakUpLineChartWidget(sleepAtPoint: weakup,),
+             // SleepAtChart(sleepAtPoint: sleepAt),
               SizedBox(height: 15,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -210,4 +213,153 @@ class _SleepQualityState extends State<SleepQuality> {
       ),
     );
   }
+}
+/*------------------sleep chart--------------------------------*/
+
+class SleepAtLineChartWidget extends StatelessWidget {
+  final List<SleepAt> sleepAtPoint;
+
+  const SleepAtLineChartWidget({super.key,required this.sleepAtPoint});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 200,
+      width: 320,
+      child: AspectRatio(
+        aspectRatio: 2,
+        child: LineChart(
+          LineChartData(
+              lineBarsData: [
+                LineChartBarData(
+                  spots: sleepAtPoint.map((sleepAtpoin) => FlSpot(sleepAtpoin.x, sleepAtpoin.y)).toList(),
+                 //spots: sleepAtPoint.map((sleepAtpoin) => FlSpot(sleepAtpoin.x, sleepAtpoin.y)).toList(),
+                  isCurved: false,
+                  dotData: FlDotData(
+                    show: false,
+                  ),
+                  color: Color.fromRGBO(134, 229, 255, 1)
+                ),
+              ],
+              borderData: FlBorderData(
+                  border: const Border(bottom: BorderSide(), left: BorderSide())),
+              gridData: FlGridData(show: false),
+              titlesData: FlTitlesData(
+                bottomTitles: AxisTitles(sideTitles: _bottomTitles),
+                leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+              ),
+            ),
+        ),
+      ),
+    );
+  }
+
+  SideTitles get _bottomTitles => SideTitles(
+    showTitles: true,
+    getTitlesWidget: (value, meta) {
+      String text = '';
+      switch (value.toInt()) {
+        case 0:
+          text = 'Mon';
+          break;
+        case 1:
+          text = 'Tue';
+          break;
+        case 2:
+          text = 'Wen';
+          break;
+        case 3:
+          text = 'Thu';
+          break;
+        case 4:
+          text = 'Fri';
+          break;
+        case 5:
+          text = 'Stu';
+          break;
+        case 6:
+          text = 'Sun';
+          break;
+      }
+
+      return Text(text);
+    },
+  );
+}
+
+/*------------------weakup chart--------------------------------*/
+
+class WeakUpLineChartWidget extends StatelessWidget {
+  final List<Weakup> sleepAtPoint;
+
+  const WeakUpLineChartWidget({super.key,required this.sleepAtPoint});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 200,
+      width: 320,
+      child: AspectRatio(
+        aspectRatio: 2,
+        child: LineChart(
+          LineChartData(
+              lineBarsData: [
+                LineChartBarData(
+                  spots: sleepAtPoint.map((sleepAtpoin) => FlSpot(sleepAtpoin.x, sleepAtpoin.y)).toList(),
+                 //spots: sleepAtPoint.map((sleepAtpoin) => FlSpot(sleepAtpoin.x, sleepAtpoin.y)).toList(),
+                  isCurved: false,
+                  dotData: FlDotData(
+                    show: false,
+                  ),
+                  color: Color.fromRGBO(134, 229, 255, 1)
+                ),
+              ],
+              borderData: FlBorderData(
+                  border: const Border(bottom: BorderSide(), left: BorderSide())),
+              gridData: FlGridData(show: false),
+              titlesData: FlTitlesData(
+                bottomTitles: AxisTitles(sideTitles: _bottomTitles),
+                leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+              ),
+            ),
+        ),
+      ),
+    );
+  }
+
+  SideTitles get _bottomTitles => SideTitles(
+    showTitles: true,
+    getTitlesWidget: (value, meta) {
+      String text = '';
+      switch (value.toInt()) {
+        case 0:
+          text = 'Mon';
+          break;
+        case 1:
+          text = 'Tue';
+          break;
+        case 2:
+          text = 'Wen';
+          break;
+        case 3:
+          text = 'Thu';
+          break;
+        case 4:
+          text = 'Fri';
+          break;
+        case 5:
+          text = 'Stu';
+          break;
+        case 6:
+          text = 'Sun';
+          break;
+      }
+
+      return Text(text);
+    },
+  );
 }
