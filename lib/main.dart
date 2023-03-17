@@ -35,8 +35,6 @@ Future<void> main() async {
 }
 
 class MyApp extends StatelessWidget {
-                    
-
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -62,19 +60,12 @@ class MyApp extends StatelessWidget {
      // home:AlarmScreen(),
      // home:ChartScreen(),
 
-     //home:const WelComeScreen(),     //sasni
-     
-    // home:SignUpScreen(),      //sasni
 
-    // home:ProfileScreen(),     //naflan
-    
-    // home:RewardsScreen(),      //janith
+      // home:RewardsScreen(),      //janith
 
-    // home:NotificationScreen(),  //janith
+      // home:NotificationScreen(),  //janith
 
       debugShowCheckedModeBanner: false,
     );
   }
 }
-
-
