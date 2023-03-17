@@ -6,7 +6,7 @@ import 'package:sleepwellfrontend/models/User.dart';
 class ServiceUser{
   static Future<User?> fetchUser(String objectId) async {
     try{
-      var url = "http://localhost:8000/sleepWell/api/FindUserInfo?objectId=$objectId";
+      var url = "http://10.0.2.2:8000/sleepWell/api/FindUserInfo?objectId=$objectId";
       final uri = Uri.parse(url);
       final response = await http.get(uri);
       final body = response.body;

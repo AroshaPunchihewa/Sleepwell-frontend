@@ -23,7 +23,14 @@ class SummeryBox extends StatelessWidget {
                   blurRadius: 15
                 )*/
                 ],
-                  color: Color.fromRGBO(246, 234, 232, 1),
+                gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+                  colors: [
+                    Color.fromRGBO(91, 192, 248, 1),
+                    Color.fromRGBO(134, 229, 255, 1),
+                    ],
+                ),
                   border: Border.all(color: Color.fromRGBO(246, 234, 232, 1)),
                   borderRadius: BorderRadius.circular(10),),
                 padding: const EdgeInsets.all(8.0),
