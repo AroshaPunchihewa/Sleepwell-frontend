@@ -1,0 +1,64 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.gdelataillade.alarm.alarm" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="16" />
+7-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+9-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:3:3-78
+9-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:3:20-76
+10    <uses-permission android:name="android.permission.WAKE_LOCK" />
+10-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:4:3-65
+10-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:4:20-63
+11    <!-- For apps with targetSDK=31 (Android 12) -->
+12    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+12-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:6:3-76
+12-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:6:20-74
+13
+14    <application>
+14-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:7:3-27:17
+15        <service
+15-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:8:5-11:35
+16            android:name="com.gdelataillade.alarm.alarm.NotificationOnKillService"
+16-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:9:9-50
+17            android:enabled="true"
+17-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:10:9-31
+18            android:exported="false" />
+18-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:11:9-33
+19        <service
+19-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:12:5-15:35
+20            android:name="dev.fluttercommunity.plus.androidalarmmanager.AlarmService"
+20-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:13:9-82
+21            android:exported="false"
+21-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:15:9-33
+22            android:permission="android.permission.BIND_JOB_SERVICE" />
+22-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:14:9-65
+23
+24        <receiver
+24-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:16:5-18:35
+25            android:name="dev.fluttercommunity.plus.androidalarmmanager.AlarmBroadcastReceiver"
+25-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:17:9-92
+26            android:exported="false" />
+26-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:18:9-33
+27        <receiver
+27-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:19:5-26:16
+28            android:name="dev.fluttercommunity.plus.androidalarmmanager.RebootBroadcastReceiver"
+28-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:20:9-93
+29            android:enabled="false"
+29-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:21:9-32
+30            android:exported="false" >
+30-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:22:9-33
+31            <intent-filter>
+31-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:23:9-25:25
+32                <action android:name="android.intent.action.BOOT_COMPLETED" />
+32-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:24:13-75
+32-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/alarm-0.1.5/android/src/main/AndroidManifest.xml:24:21-72
+33            </intent-filter>
+34        </receiver>
+35    </application>
+36
+37</manifest>
