@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sasni\\Documents\\SDGP\\Sleepwell-frontend\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "C:\\Users\\Pasindu Matharage\\OneDrive\\Desktop\\IIT\\sleepnew\\Sleepwell-frontend\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sasni\\.gradle\\caches\\transforms-3\\47314ba33c4e3f2a973a3a4e62169be6\\transformed\\appcompat-1.3.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\Pasindu Matharage\\.gradle\\caches\\transforms-3\\47314ba33c4e3f2a973a3a4e62169be6\\transformed\\appcompat-1.3.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

@@ -22,47 +22,7 @@ TextEditingController minuteController = TextEditingController();
 @override
 Widget build(BuildContext context) {
 	return Scaffold(
-    // bottomNavigationBar: BottomNavigationBar(
-    //     items: const <BottomNavigationBarItem>[
-    //       BottomNavigationBarItem(
-    //         icon: Icon(Icons.home),
-    //         label: 'Home',
-    //       ),
-    //       BottomNavigationBarItem(
-    //         icon: Icon(Icons.alarm),
-    //         label: 'Alarm',
-    //       ),
-    //     ],
-    //     currentIndex: _selectedIndex,
-    //     //selectedItemColor: Colors.amber[800],
-    //     onTap: (int index) {
-    //       switch (index) {
-    //         case 0:
-    //         Navigator.push(
-    //           context,
-    //           MaterialPageRoute(builder: (context) =>  HomeScreen()),);
-    //           // only scroll to top when current index is selected.
-    //           if (_selectedIndex == index) {
-    //             _homeController.animateTo(
-    //               0.0,
-    //               duration: const Duration(milliseconds: 500),
-    //               curve: Curves.easeOut,
-    //             );
-    //           }
-    //           break;
-    //         case 1:
-    //           Navigator.push(
-    //           context,
-    //           MaterialPageRoute(builder: (context) =>  HomeScreen()),);
-    //           break;
-    //       }
-    //       setState(
-    //         () {
-    //           _selectedIndex = index;
-    //         },
-    //       );
-    //     },
-    //   ),
+    
 	appBar: AppBar(
 		title: const Text('SleepWell Alarm'),
 		centerTitle: true,
@@ -71,7 +31,7 @@ Widget build(BuildContext context) {
       child: Center(
         child: Column(children: <Widget>[
         const SizedBox(height: 90),
-    // Image.asset("assets/images/Untitled-1.png",width: 200,height: 200,),
+    
       Icon(Icons.alarm,size: 200,color: Color.fromRGBO(91, 192, 248, 1),),
      
      const SizedBox(height: 30),
@@ -119,6 +79,7 @@ Widget build(BuildContext context) {
           
           child: Center(
             child: Text(
+            
             "hours",style: TextStyle(color: Color.fromRGBO(91, 192, 248, 1),fontSize: 20,fontWeight: FontWeight.bold),
             ),
           ),
@@ -130,6 +91,7 @@ Widget build(BuildContext context) {
           
           child: Center(
             child: Text(
+            
             "min",style: TextStyle(color: Color.fromRGBO(91, 192, 248, 1),fontSize: 20,fontWeight: FontWeight.bold),
             ),
           ),
@@ -158,56 +120,9 @@ Widget build(BuildContext context) {
           },
         ),
         ),
-        // ElevatedButton(
-        // onPressed: () {
+        
+        
           
-        // 	// show alarm
-        // 	FlutterAlarmClock.showAlarms();
-        // },
-        // child: const Text(
-        // 	'Show Alarms',
-        // 	style: TextStyle(fontSize: 20.0),
-        // ),
-        // ),
-        // Container(
-        // margin: const EdgeInsets.all(25),
-        // child: TextButton(
-        // 	child: const Text(
-        // 		'Create timer',
-        // 		style: TextStyle(fontSize: 20.0),
-        // 	),
-        // 	onPressed: () {
-        // 		int minutes;
-        // 		minutes = int.parse(minuteController.text);
-            
-        // 		// create timer
-        // 		FlutterAlarmClock.createTimer(minutes);
-        // 		showDialog(
-        // 			context: context,
-        // 			builder: (context) {
-        // 			return const AboutDialog(
-        // 				children: [
-        // 				Center(
-        // 					child: Text("Timer is set",
-        // 						style: TextStyle(
-        // 							fontSize: 20, fontWeight: FontWeight.bold)),
-        // 				)
-        // 				],
-        // 			);
-        // 			});
-        // 	}),
-        // ),
-        // ElevatedButton(
-        // onPressed: () {
-          
-        // 	// show timers
-        // 	FlutterAlarmClock.showTimers();
-        // },
-        // child: const Text(
-        // 	"Show Timers",
-        // 	style: TextStyle(fontSize: 17),
-        // ),
-        // )
       ])),
     ),
 	);
