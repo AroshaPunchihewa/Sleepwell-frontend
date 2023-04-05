@@ -46,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
          bool isTimerRunning = false;
 Timer? timer;
 
+
   int awakeTime = 0;
   int lightTime = 0;
   int deepTime = 0;
@@ -139,13 +140,7 @@ Timer? timer;
     }
   }
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   initPlatformState();
-  // }
-
-  // Platform messages are asynchronous, so we initialize in an async method.
+ 
   Future<void> initPlatformState() async {
     startListening();
   }
@@ -194,16 +189,12 @@ void passArray(int arrlight,int arrAcc,int arrNoice,int arrTap,int minth){
     
   
 
-
-// Print the array
-//print(myArray);
-
 printMA=myArray;
 
 }
 List<List<int>> array2D = [];
 void btnStart(){
-  print("MEKA WEDA MACHNG");
+  print("This is working");
   deepTime = 0;
   awakeTime =0;
   lightTime =0;

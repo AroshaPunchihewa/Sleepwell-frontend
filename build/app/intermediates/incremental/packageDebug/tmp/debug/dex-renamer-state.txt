@@ -1,7 +1,7 @@
-#Thu Apr 06 00:49:40 IST 2023
-base.1=/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+#Thu Apr 06 02:38:41 IST 2023
+base.1=C\:\\Users\\sasni\\Documents\\SDGP\\Sleepwell-frontend\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
-base.0=/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.0=C\:\\Users\\sasni\\Documents\\SDGP\\Sleepwell-frontend\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex
