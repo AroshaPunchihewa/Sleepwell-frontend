@@ -40,8 +40,8 @@
         android:name="io.flutter.app.FlutterMultiDexApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="sleepwellfrontend" >
+        android:icon="@mipmap/launcher_icon"
+        android:label="SleepWell" >
         <activity
             android:name="com.example.sleepwellfrontend.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

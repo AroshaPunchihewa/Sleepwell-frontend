@@ -73,8 +73,8 @@
 41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 41-->[androidx.core:core:1.7.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/5e083c06c9925c2309f02468fc66e376/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 42        android:debuggable="true"
-43        android:icon="@mipmap/ic_launcher"
-44        android:label="sleepwellfrontend" >
+43        android:icon="@mipmap/launcher_icon"
+44        android:label="SleepWell" >
 45        <activity
 46            android:name="com.example.sleepwellfrontend.MainActivity"
 47            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

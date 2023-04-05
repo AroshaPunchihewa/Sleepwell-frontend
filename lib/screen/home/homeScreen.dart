@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 import 'package:light/light.dart';
 import 'package:noise_meter/noise_meter.dart';
 import 'package:sensors_plus/sensors_plus.dart';
+import 'package:sleepwellfrontend/main.dart';
 import 'package:sleepwellfrontend/models/User.dart';
 import 'package:sleepwellfrontend/rout/routsname.dart';
 import 'package:sleepwellfrontend/screen/alarm/alarmScreen.dart';
@@ -230,7 +231,7 @@ void btnStop() {
   }
 }
 Future<List<String>> sendRequest(List<List<int>> data) async {
-  final url = Uri.parse('http://10.0.2.2:5000/predict');
+  final url = Uri.parse(baseUrl! + '/predict');
 
   // Define the request body as a list of lists
   final body = data;

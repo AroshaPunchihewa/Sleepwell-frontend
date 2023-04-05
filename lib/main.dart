@@ -13,8 +13,9 @@ import 'package:sleepwellfrontend/screen/rewards/rewardsScreen.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
-
+String? baseUrl;
 Future<void> main() async {
+  baseUrl = "https://3943-2402-d000-8104-b606-ccec-8b5f-b7c3-c208.in.ngrok.io";
   WidgetsFlutterBinding.ensureInitialized();
    
    var initializationSettingsAndroid = AndroidInitializationSettings('folder');
