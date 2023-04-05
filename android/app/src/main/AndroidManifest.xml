@@ -2,6 +2,7 @@
     package="com.example.sleepwellfrontend">
     <uses-permission android:name="android.permission.BODY_SENSORS"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="sleepwellfrontend"
         android:name="${applicationName}"

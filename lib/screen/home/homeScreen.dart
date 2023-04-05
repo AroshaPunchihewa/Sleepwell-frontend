@@ -10,6 +10,7 @@ import 'package:sensors_plus/sensors_plus.dart';
 import 'package:sleepwellfrontend/models/User.dart';
 import 'package:sleepwellfrontend/rout/routsname.dart';
 import 'package:sleepwellfrontend/screen/alarm/alarmScreen.dart';
+import 'package:sleepwellfrontend/screen/alarm/alarmnew.dart';
 import 'package:sleepwellfrontend/services/Services_Predict.dart';
 import 'package:sleepwellfrontend/services/Services_User.dart';
 import 'package:sleepwellfrontend/widget/button.dart';
@@ -20,10 +21,13 @@ import 'package:http/http.dart' as http;
 class HomeScreen extends StatefulWidget {
   //User user;
   // HomeScreen({super.key,required this.user});
-   HomeScreen({super.key});
+   const HomeScreen({super.key});
+   
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
+
+  
 }
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -40,6 +44,13 @@ class _HomeScreenState extends State<HomeScreen> {
          int minth = 0;
          bool isTimerRunning = false;
 Timer? timer;
+
+  int awakeTime = 0;
+  int lightTime = 0;
+  int deepTime = 0;
+  int deepTimeMin=0;
+  int lightTimeMin=0;
+  int awakeTimeMin=0;
 
 
 
@@ -102,8 +113,8 @@ Timer? timer;
       }else{
         noicePass = 1;
       }
-       print(noiseReading.toString());
-       print(noicePass.toString());
+      // print(noiseReading.toString());
+       //print(noicePass.toString());
 
      _noiceString = noiseReading.meanDecibel.toString();
       
@@ -184,14 +195,17 @@ void passArray(int arrlight,int arrAcc,int arrNoice,int arrTap,int minth){
 
 
 // Print the array
-print(myArray);
+//print(myArray);
 
 printMA=myArray;
 
 }
 List<List<int>> array2D = [];
-@override
 void btnStart(){
+  print("MEKA WEDA MACHNG");
+  deepTime = 0;
+  awakeTime =0;
+  lightTime =0;
   array2D.clear();
   isTimerRunning = true;
   timer=Timer.periodic(Duration(seconds: 5), (timer) {
@@ -208,6 +222,7 @@ void btnStart(){
 void btnStop() {
   if (timer != null) {
     timer!.cancel();
+    
     isTimerRunning = false;
   }
 }
@@ -226,10 +241,28 @@ Future<List<String>> sendRequest(List<List<int>> data) async {
 
   // Get the response data as a JSON object
   final jsonData = jsonDecode(response.body);
+  List<String> stringList = jsonData.cast<String>().toList();
 
+  
+  for (int i=0;i<stringList.length;i++){
+  if (stringList[i]=="LIGHT SLEEP") {
+    lightTime +=5;
+  } else if(stringList[i]=="DEEP SLEEP"){
+     deepTime +=5;
+  }else if(stringList[i]=="AWAKE"){
+     awakeTime +=5;
+  }
+  
+}
+
+deepTimeMin=deepTime~/60;
+lightTimeMin=lightTime~/60;
+awakeTimeMin=awakeTime~/60;
   // Print the response data
-  print(jsonData);
-  return (jsonData);
+  //print(jsonData);
+  return (stringList);
+  // Print the response data
+  
 }
 
   @override
@@ -269,14 +302,25 @@ Future<List<String>> sendRequest(List<List<int>> data) async {
     );
   }
   
+ int _selectedIndex = 0;
+ final ScrollController _homeController = ScrollController();
 
-
-  // getVehicleService() async {
-  //   user = (await ServiceUser.fetchUser("005"));
-  //   setState(() {});
-  // }
+  
   @override
   Widget build(BuildContext context) {
+        DateTime now = DateTime.now();
+        var timeNow = int.parse(DateFormat('kk').format(now));
+        late String greetingMessage = '';
+        if((timeNow < 10) && (timeNow>4)){
+             greetingMessage="Good Morning";
+        }else if((timeNow>=10) && (timeNow<18)){
+             greetingMessage="Good Afternoon";
+        }else if((timeNow<=22) && (timeNow>18)){
+             greetingMessage="Good Night";
+        }  
+        
+        
+    
 
 
     final userAccelerometer = _userAccelerometerValues //--
@@ -286,231 +330,258 @@ Future<List<String>> sendRequest(List<List<int>> data) async {
     String time = DateFormat.jm().format(DateTime.now());
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-    items: const <BottomNavigationBarItem>[
-      BottomNavigationBarItem(
-        icon: Icon(Icons.home,color: Colors.black,),
-        label: 'home',
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(Icons.bar_chart,color: Colors.black,),
-        label: 'Camera',
-        
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(Icons.notifications,color: Colors.black,),
-        label: 'Chats',
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(Icons.emoji_events_rounded,color: Colors.black,),
-        label: 'Chats',
-      ),
-      
-    ],
-      ),
-      body: GestureDetector(
-        onTapDown: (_) {
-        setState(() {
-          _tappedValue = 1;
-        });
-      },
-      onTapCancel: () {
-        setState(() {
-          _tappedValue = 0;
-        });
-      },
-      onTapUp: (_) {
-        setState(() {
-          _tappedValue = 0;
-        });
-      },
-        child: SafeArea(
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            color: Colors.white,
-            child: Column(
-              children: [
-                Column(
-                  children:[
-                Row(
-                  
-                  children:[
-                    Row(
-                      
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(left: 8),
-                          child: Text("Good Morning!",style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
-                        ),
-                        SizedBox(width: 10,),
-                        //Text(user!.name.toString(),style:TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
-                        
-      
-                      ]
-                    ),
-                    const Spacer(),
-                    CircleAvatar(
-                      child:ClipOval(
-                      child: Image.asset("assets/images/propic.jpeg",width: 60,height: 60,fit: BoxFit.cover,)
-                      ),
-                    )
-      
-                  ]
-                ),
-                
-               Row(
-                children:[
-                  Column(
-                    children:[
-                Padding(
-                  padding: EdgeInsets.only(left:8),
-                  child: Text(time),
-                ),
-                
-                    ]
-                  )
-                ]
-               ),
-               Row(
-                children:[
-                  Column(
-                    children:[
-                
-                Padding(
-                  padding: EdgeInsets.only(left:8),
-               child: Text(formattedDate),
-                )
-                    ]
-                  )
-                ]
-               )
-                  ]
-                ),
-                SizedBox(height: 30,),
-                 Text("Next Alarm"),
-                  Text("06:00 AM",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w800),),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.alarm,size: 15,),
-                      SizedBox(width: 10,),
-                       Text("Alarm off"),
-                    ],
-                  ),
-                  SizedBox(height: 20,),
-                  CommonButton(
-                    onTap: (){NavigationServices(context).gotoAlarmScreen();},
-                    icone: Icons.add_circle,
-                    buttonText: "Alarm",
-                    buttonWidth: 150,
-                    buttonHight: 55,
-                    backgroundColor: Color.fromRGBO(255, 201, 60, 1),
-                    ),
-                    SizedBox(height: 20,),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 200),
-                      child: Text("How do you feel",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                    ),
-                    SizedBox(height: 15,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                          onPressed: btnStart,
-                          child: Icon( 
-                            Icons.sentiment_satisfied_alt_outlined,
-                            color: Colors.black,
-                            size: 44,
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            shape: CircleBorder(), 
-                            padding: EdgeInsets.all(20),
-                          ),
-                          
-                        ),
-                        SizedBox(width: 15,),
-                        ElevatedButton(
-                          onPressed: btnStop,
-                          child: Icon( 
-                            Icons.sentiment_dissatisfied ,
-                            color: Colors.black,
-                            size: 44,
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            shape: CircleBorder(), 
-                            padding: EdgeInsets.all(20),
-                          ),
-                        ),
-                        SizedBox(width: 15,),
-                        ElevatedButton(
-                          //onPressed: ()  {print("wada oiiiiii");},
-                          onPressed: ()async {
-                             List<String> stringList=await sendRequest(array2D);
-                            String string = stringList.join(', ');
-                            showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+string),));
-                          },
-                          child: Icon( 
-                            Icons.close,
-                            color: Colors.black,
-                            size: 44,
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            shape: CircleBorder(), 
-                            padding: EdgeInsets.all(20),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 20,),
-                    // Padding(
-                    //   padding: const EdgeInsets.only(right: 235),
-                    //   child: Text("Summary",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                    // ),
-                     Padding(
-                      padding: const EdgeInsets.only(right: 235),
-                      child: Text("$array2D",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                    ),
-                    SizedBox(height: 15,),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 25,right: 25),
-                      child: Row(
-                        children: [
-                          SummeryBox(
-                            topic: "light",
-                            info: "$ligthpass",
-                          ),
-                          Spacer(),
-                          SummeryBox(
-                            topic: "acceloro",
-                            info: "$_userAccelerometerValuesYPass",
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 15,),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 25,right: 25),
-                      child: Row(
-                        children: [
-                          SummeryBox(
-                            topic: "Noice",
-                            info: "$noicePass",
-                          ),
-                          Spacer(),
-                          SummeryBox(
-                            topic: "taps",
-                            info: "$_tappedValue",
-                          ),
-                        ],
-                      ),
-                    ),
-      
-              ],
-      
-            ),
-          )
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
           ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.alarm),
+            label: 'Alarm',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+       // selectedItemColor: Colors.amber[800],
+        onTap: (int index) {
+          switch (index) {
+            case 0:
+              // only scroll to top when current index is selected.
+              if (_selectedIndex == index) {
+                _homeController.animateTo(
+                  0.0,
+                  duration: const Duration(milliseconds: 500),
+                  curve: Curves.easeOut,
+                );
+              }
+              break;
+            case 1:
+             Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>  AlarmNewP(myCallback: btnStart,)),
+            );
+              break;
+          }
+          setState(
+            () {
+              _selectedIndex = index;
+            },
+          );
+        },
+      ),
+    
+      body: SingleChildScrollView(
+        child: GestureDetector(
+          onTapDown: (_) {
+          setState(() {
+            _tappedValue = 1;
+          });
+        },
+        onTapCancel: () {
+          setState(() {
+            _tappedValue = 0;
+          });
+        },
+        onTapUp: (_) {
+          setState(() {
+            _tappedValue = 0;
+          });
+        },
+          child: SafeArea(
+            
+              //padding: const EdgeInsets.symmetric(horizontal: 16),
+             // color: Colors.white,
+              child: Column(
+                
+                children: [
+                  
+                  SizedBox(height: 30,),
+                  
+                  Padding(
+                            padding: EdgeInsets.only(left: 8),
+                            
+                            child: Text("$greetingMessage",style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                  children:[
+                    Column(
+                      children:[
+                  //Padding(
+                   // padding: EdgeInsets.only(left:8),
+                    Text(time),
+                 // ),
+                  
+                      ]
+                    )
+                  ]
+                 ),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children:[
+                    Column(
+                      children:[
+                  
+                 // Padding(
+                   // padding: EdgeInsets.only(left:8),
+                 Text(formattedDate),
+                 // )
+                      ]
+                    )
+                  ]
+                 ),
+                    
+
+                SizedBox(height: 20,),
+                CommonButton(
+                      
+                      onTap: (){ Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>  AlarmNewP(myCallback: btnStart,)),
+            );
+            },
+                      icone: Icons.add_circle,
+                      buttonText: "Alarm",
+                      buttonWidth: 150,
+                      buttonHight: 55,
+                      backgroundColor: Color.fromRGBO(255, 201, 60, 1),
+                      ),
+                      SizedBox(height: 20,),
+                      CommonButton(
+                      
+                      onTap: ()async {
+                               List<String> stringList=await sendRequest(array2D);
+                               //print(array2D);
+                               //print(stringList);
+                              String string = stringList.join(', ');
+                              //showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+string),));
+                              showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+stringList.toString()),));
+                            btnStop;},
+                      icone: Icons.stop,
+                      buttonText: "Stop Sleep Tracking",
+                      buttonWidth: 250,
+                      buttonHight: 55,
+                      backgroundColor: Color.fromRGBO(255, 122, 60, 1),
+                      ),
+                      SizedBox(height: 20,),
+                      Row(
+                        
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                        Padding(padding: const EdgeInsets.symmetric(horizontal: 10),),
+                         Text("How do you feel",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                        ]
+                      ),
+                      SizedBox(height: 20,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ElevatedButton(
+                            onPressed: btnStart,
+                            child: Icon( 
+                              Icons.sentiment_satisfied_alt_outlined,
+                              color: Colors.black,
+                              size: 44,
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              shape: CircleBorder(), 
+                              padding: EdgeInsets.all(20),
+                            ),
+                            
+                          ),
+                          SizedBox(width: 15,),
+                          ElevatedButton(
+                            onPressed: btnStop,
+                            child: Icon( 
+                              Icons.sentiment_dissatisfied ,
+                              color: Colors.black,
+                              size: 44,
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              shape: CircleBorder(), 
+                              padding: EdgeInsets.all(20),
+                            ),
+                          ),
+                          SizedBox(width: 15,),
+                          ElevatedButton(
+                            //onPressed: ()  {print("wada oiiiiii");},
+                            onPressed: ()async {
+                               List<String> stringList=await sendRequest(array2D);
+                               //print(array2D);
+                               //print(stringList);
+                              String string = stringList.join(', ');
+                              //showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+string),));
+                              showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+stringList.toString()),));
+                            },
+                            child: Icon( 
+                              Icons.close,
+                              color: Colors.black,
+                              size: 44,
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              shape: CircleBorder(), 
+                              padding: EdgeInsets.all(20),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 40,),
+                      
+                       Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                        Padding(padding: const EdgeInsets.symmetric(horizontal: 10),),
+                         Text("$array2D",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                        // Text("Sleep Type and Time Duration",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                        ]
+                      ),
+                      SizedBox(height: 30,),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 25,right: 25),
+                        child: Row(
+                          children: [
+                            SummeryBox(
+                              topic: "Light Sleep (min)",
+                             // info: "$ligthpass",
+                             info: "$lightTimeMin",
+                            ),
+                            Spacer(),
+                            SummeryBox(
+                              topic: "Deep Sleep (min)",
+                              info: "$deepTimeMin",
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 15,),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 25,right: 25),
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SummeryBox(
+                              topic: "Awake (min)",
+                             // info: "$noicePass",
+                             info: "$awakeTimeMin",
+                            ),
+                           // Spacer(),
+                            // SummeryBox(
+                            //   topic: "sleep score",
+                            //  // info: "$_tappedValue",
+                            //  info: "$awakeTime",
+                            // ),
+                          ],
+                        ),
+                      ),
+        
+                ],
+        
+              ),
+            
+            ),
+        ),
       ),
     );
   }
+  
 }
 

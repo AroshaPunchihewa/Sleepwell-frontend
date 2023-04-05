@@ -128,6 +128,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_alarm_clock",
+      "rootUri": "file:///Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/flutter_alarm_clock-0.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_fgbg",
       "rootUri": "file:///Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/flutter_fgbg-0.2.2",
       "packageUri": "lib/",
@@ -506,7 +512,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-03-24T17:56:05.169502Z",
+  "generated": "2023-04-01T08:58:40.525633Z",
   "generator": "pub",
   "generatorVersion": "2.19.4"
 }

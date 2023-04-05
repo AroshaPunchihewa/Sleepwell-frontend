@@ -5,6 +5,7 @@ import 'package:sleepwellfrontend/rout/routsname.dart';
 import 'package:sleepwellfrontend/screen/SignUp/signupScreen.dart';
 import 'package:sleepwellfrontend/screen/SignUp/welcomeScreen.dart';
 import 'package:sleepwellfrontend/screen/alarm/alarmScreen.dart';
+import 'package:sleepwellfrontend/screen/alarm/alarmnew.dart';
 import 'package:sleepwellfrontend/screen/charts/chartScreen.dart';
 import 'package:sleepwellfrontend/screen/home/homeScreen.dart';
 import 'package:sleepwellfrontend/screen/profile/profileScreen.dart';
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
      home:HomeScreen(), //Arosha
+     //home:AlarmNewP(),
      //home:AlarmScreen(),
 
      // home:AlarmScreen(),
