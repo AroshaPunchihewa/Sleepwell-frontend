@@ -71,7 +71,9 @@ Widget build(BuildContext context) {
       child: Center(
         child: Column(children: <Widget>[
         const SizedBox(height: 90),
-     Image.asset("assets/images/Untitled-1.png",width: 200,height: 200,),
+    // Image.asset("assets/images/Untitled-1.png",width: 200,height: 200,),
+      Icon(Icons.alarm,size: 200,color: Color.fromRGBO(91, 192, 248, 1),),
+     
      const SizedBox(height: 30),
         Row(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
-6-->/Users/aroshapunchihewa/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_android-9.0.2+1/android/src/main/AndroidManifest.xml
+6-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/permission_handler_android-9.0.2+1/android/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="16" />
-7-->/Users/aroshapunchihewa/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_android-9.0.2+1/android/src/main/AndroidManifest.xml
+7-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/permission_handler_android-9.0.2+1/android/src/main/AndroidManifest.xml
 8
 9</manifest>
