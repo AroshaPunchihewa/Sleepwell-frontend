@@ -206,6 +206,9 @@ void btnStart(){
   deepTime = 0;
   awakeTime =0;
   lightTime =0;
+  deepTimeMin=0;
+  lightTimeMin=0;
+  awakeTimeMin=0;
   array2D.clear();
   isTimerRunning = true;
   timer=Timer.periodic(Duration(seconds: 5), (timer) {
@@ -256,6 +259,7 @@ Future<List<String>> sendRequest(List<List<int>> data) async {
 }
 
 deepTimeMin=deepTime~/60;
+print(deepTime);
 lightTimeMin=lightTime~/60;
 awakeTimeMin=awakeTime~/60;
   // Print the response data
@@ -434,14 +438,12 @@ awakeTimeMin=awakeTime~/60;
                 SizedBox(height: 20,),
                 CommonButton(
                       
-                      onTap: (){ Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) =>  AlarmNewP(myCallback: btnStart,)),
-            );
-            },
+                      onTap: (){ 
+                        btnStart();
+           },
                       icone: Icons.add_circle,
-                      buttonText: "Alarm",
-                      buttonWidth: 150,
+                      buttonText: "Start Sleep Tracking",
+                      buttonWidth: 250,
                       buttonHight: 55,
                       backgroundColor: Color.fromRGBO(255, 201, 60, 1),
                       ),
@@ -455,7 +457,7 @@ awakeTimeMin=awakeTime~/60;
                               String string = stringList.join(', ');
                               //showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+string),));
                               showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+stringList.toString()),));
-                            btnStop;},
+                            btnStop();},
                       icone: Icons.stop,
                       buttonText: "Stop Sleep Tracking",
                       buttonWidth: 250,
@@ -530,8 +532,8 @@ awakeTimeMin=awakeTime~/60;
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                         Padding(padding: const EdgeInsets.symmetric(horizontal: 10),),
-                         Text("$array2D",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
-                        // Text("Sleep Type and Time Duration",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                         //Text("$array2D",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                         Text("Sleep Type and Time Duration",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                         ]
                       ),
                       SizedBox(height: 30,),
