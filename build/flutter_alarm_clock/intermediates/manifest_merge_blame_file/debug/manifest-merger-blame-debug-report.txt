@@ -1,0 +1,15 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="tech.sebastjanmevlja.flutter_alarm_clock" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/flutter_alarm_clock-0.0.2/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="16" />
+7-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/flutter_alarm_clock-0.0.2/android/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+9-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/flutter_alarm_clock-0.0.2/android/src/main/AndroidManifest.xml:3:5-77
+9-->/Users/aroshapunchihewa/.pub-cache/hosted/pub.dev/flutter_alarm_clock-0.0.2/android/src/main/AndroidManifest.xml:3:22-75
+10
+11</manifest>

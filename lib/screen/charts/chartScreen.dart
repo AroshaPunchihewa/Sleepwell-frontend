@@ -44,9 +44,9 @@ class _ChartScreenState extends State<ChartScreen> {
               
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(left:8.0),
+                    padding: EdgeInsets.only(left:8.0),
                     child: Text("Weekly sleep trends",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                   ),
                 ],
@@ -54,7 +54,7 @@ class _ChartScreenState extends State<ChartScreen> {
             SizedBox(height: 15,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Icon(Icons.arrow_left_sharp),
                 Text('jan 2 - jan 8',style: TextStyle(fontSize: 20),),
                 Icon(Icons.arrow_right_sharp)
@@ -63,9 +63,9 @@ class _ChartScreenState extends State<ChartScreen> {
             SizedBox(height: 15,),
             Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(left:8.0),
+                    padding: EdgeInsets.only(left:8.0),
                     child: Text("Sleep duration",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                   ),
                 ],
@@ -81,9 +81,9 @@ class _ChartScreenState extends State<ChartScreen> {
               SizedBox(height: 15,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(left:8.0),
+                    padding: EdgeInsets.only(left:8.0),
                     child: Text("Sleep at",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                   ),
                 ],
@@ -94,9 +94,9 @@ class _ChartScreenState extends State<ChartScreen> {
               SizedBox(height: 15,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(left:8.0),
+                    padding: EdgeInsets.only(left:8.0),
                     child: Text("Weakup at",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                   ),
                 ],
@@ -108,9 +108,9 @@ class _ChartScreenState extends State<ChartScreen> {
               SizedBox(height: 15,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(left:8.0),
+                    padding: EdgeInsets.only(left:8.0),
                     child: Text("Sleep qulity",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                   ),
                 ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sleepwellfrontend/models/User.dart';
 import 'package:sleepwellfrontend/screen/alarm/alarmScreen.dart';
-import 'package:sleepwellfrontend/screen/home/homeScreen.dart';
+import 'package:sleepwellfrontend/screen/alarm/alarmnew.dart';
 
 class NavigationServices {
   NavigationServices(this.context);
@@ -17,10 +17,10 @@ class NavigationServices {
     );
   }
 
-  Future<dynamic> gotoHomeScreen(User user) async {
-    return await _pushMaterialPageRoute(HomeScreen());
-  }
-  Future<dynamic> gotoAlarmScreen() async {
-    return await _pushMaterialPageRoute(AlarmScreen());
-  }
+  // Future<dynamic> gotoHomeScreen(User user) async {
+  //   return await _pushMaterialPageRoute(HomeScreen());
+  // }
+  // Future<dynamic> gotoAlarmScreen() async {
+  //   return await _pushMaterialPageRoute(AlarmNewP());
+  // }
 }
