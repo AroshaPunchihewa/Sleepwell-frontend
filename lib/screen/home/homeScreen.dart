@@ -392,13 +392,13 @@ awakeTimeMin=awakeTime~/60;
         },
           child: SafeArea(
             
-              //padding: const EdgeInsets.symmetric(horizontal: 16),
-             // color: Colors.white,
+              
               child: Column(
                 
                 children: [
                   
                   SizedBox(height: 30,),
+                  
                   
                   Padding(
                             padding: EdgeInsets.only(left: 8),
@@ -410,10 +410,9 @@ awakeTimeMin=awakeTime~/60;
                   children:[
                     Column(
                       children:[
-                  //Padding(
-                   // padding: EdgeInsets.only(left:8),
+                  
                     Text(time),
-                 // ),
+                 
                   
                       ]
                     )
@@ -565,12 +564,7 @@ awakeTimeMin=awakeTime~/60;
                              // info: "$noicePass",
                              info: "$awakeTimeMin",
                             ),
-                           // Spacer(),
-                            // SummeryBox(
-                            //   topic: "sleep score",
-                            //  // info: "$_tappedValue",
-                            //  info: "$awakeTime",
-                            // ),
+                           
                           ],
                         ),
                       ),
