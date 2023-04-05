@@ -1,75 +1,75 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:1-28:12
-INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:1-28:12
-INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:1-28:12
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:1-28:12
 	package
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:2:3-42
-		INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:2:3-42
+		INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:3:3-78
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:3:3-78
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:3:20-76
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:3:20-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:4:3-65
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:4:3-65
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:4:20-63
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:4:20-63
 uses-permission#android.permission.SCHEDULE_EXACT_ALARM
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:6:3-76
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:6:3-76
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:6:20-74
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:6:20-74
 application
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:7:3-27:17
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:7:3-27:17
 service#com.gdelataillade.alarm.alarm.NotificationOnKillService
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:8:5-11:35
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:8:5-11:35
 	android:enabled
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:10:9-31
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:10:9-31
 	android:exported
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:11:9-33
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:11:9-33
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:9:9-50
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:9:9-50
 service#dev.fluttercommunity.plus.androidalarmmanager.AlarmService
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:12:5-15:35
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:12:5-15:35
 	android:exported
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:15:9-33
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:15:9-33
 	android:permission
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:14:9-65
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:14:9-65
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:13:9-82
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:13:9-82
 receiver#dev.fluttercommunity.plus.androidalarmmanager.AlarmBroadcastReceiver
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:16:5-18:35
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:16:5-18:35
 	android:exported
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:18:9-33
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:18:9-33
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:17:9-92
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:17:9-92
 receiver#dev.fluttercommunity.plus.androidalarmmanager.RebootBroadcastReceiver
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:19:5-26:16
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:19:5-26:16
 	android:enabled
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:21:9-32
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:21:9-32
 	android:exported
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:22:9-33
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:22:9-33
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:20:9-93
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:20:9-93
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:23:9-25:25
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:23:9-25:25
 action#android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:24:13-75
+ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:24:13-75
 	android:name
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:24:21-72
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml:24:21-72
 uses-sdk
-INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sasni\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Pasindu Matharage\AppData\Local\Pub\Cache\hosted\pub.dev\alarm-0.2.1\android\src\main\AndroidManifest.xml
