@@ -13,65 +13,65 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/AndroidManifest.xml:5:5-66
-15-->/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/AndroidManifest.xml:5:22-64
+15-->C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\android\app\src\main\AndroidManifest.xml:5:5-66
+15-->C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\android\app\src\main\AndroidManifest.xml:5:22-64
 16    <uses-permission android:name="android.permission.BODY_SENSORS" />
-16-->/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/AndroidManifest.xml:3:5-70
-16-->/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/AndroidManifest.xml:3:22-68
+16-->C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\android\app\src\main\AndroidManifest.xml:3:5-70
+16-->C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\android\app\src\main\AndroidManifest.xml:3:22-68
 17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-17-->/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/AndroidManifest.xml:4:5-70
-17-->/Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/android/app/src/main/AndroidManifest.xml:4:22-68
+17-->C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\android\app\src\main\AndroidManifest.xml:4:5-70
+17-->C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\android\app\src\main\AndroidManifest.xml:4:22-68
 18    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-18-->[:flutter_alarm_clock] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_alarm_clock/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-78
-18-->[:flutter_alarm_clock] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_alarm_clock/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-75
+18-->[:flutter_alarm_clock] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_alarm_clock\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-78
+18-->[:flutter_alarm_clock] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_alarm_clock\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-75
 19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-19-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
-19-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+19-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+19-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
 20    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- For apps with targetSDK=31 (Android 12) -->
-20-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
-20-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+20-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+20-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
 21    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-21-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
-21-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+21-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
+21-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
 22    <uses-permission android:name="android.permission.VIBRATE" />
-22-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
-22-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+22-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-66
+22-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-63
 23    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-23-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
-23-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+23-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+23-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
 24    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-24-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
-24-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+24-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+24-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
 25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-25-->[com.google.android.exoplayer:exoplayer-core:2.18.1] /Users/aroshapunchihewa/.gradle/caches/transforms-3/6ec2c823b2ddfa9d4aff16fd99b56b89/transformed/jetified-exoplayer-core-2.18.1/AndroidManifest.xml:24:5-79
-25-->[com.google.android.exoplayer:exoplayer-core:2.18.1] /Users/aroshapunchihewa/.gradle/caches/transforms-3/6ec2c823b2ddfa9d4aff16fd99b56b89/transformed/jetified-exoplayer-core-2.18.1/AndroidManifest.xml:24:22-76
+25-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\sasni\.gradle\caches\transforms-3\6ec2c823b2ddfa9d4aff16fd99b56b89\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:5-79
+25-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\sasni\.gradle\caches\transforms-3\6ec2c823b2ddfa9d4aff16fd99b56b89\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:22-76
 26
 27    <queries>
-27-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:24:5-34:15
+27-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:24:5-34:15
 28        <intent>
-28-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:25:9-27:18
+28-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
 29            <action android:name="android.media.browse.MediaBrowserService" />
-29-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:26:13-79
-29-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:26:21-76
+29-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
+29-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
 30        </intent>
 31        <intent>
-31-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:28:9-30:18
+31-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
 32            <action android:name="androidx.media2.session.MediaSessionService" />
-32-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:29:13-82
-32-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:29:21-79
+32-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
+32-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
 33        </intent>
 34        <intent>
-34-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:31:9-33:18
+34-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
 35            <action android:name="androidx.media2.session.MediaLibraryService" />
-35-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:32:13-82
-35-->[androidx.media2:media2-session:1.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/aa7263188b29434019ae8934cbefd4da/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:32:21-79
+35-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
+35-->[androidx.media2:media2-session:1.2.0] C:\Users\sasni\.gradle\caches\transforms-3\aa7263188b29434019ae8934cbefd4da\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
 36        </intent>
 37    </queries>
 38
 39    <application
 40        android:name="io.flutter.app.FlutterMultiDexApplication"
 41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-41-->[androidx.core:core:1.7.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/5e083c06c9925c2309f02468fc66e376/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+41-->[androidx.core:core:1.7.0] C:\Users\sasni\.gradle\caches\transforms-3\5e083c06c9925c2309f02468fc66e376\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 42        android:debuggable="true"
 43        android:icon="@mipmap/launcher_icon"
 44        android:label="SleepWell" >
@@ -109,101 +109,101 @@
 76            android:value="2" />
 77
 78        <service
-78-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-18:40
+78-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-18:40
 79            android:name="com.gdelataillade.alarm.alarm.NotificationOnKillService"
-79-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-83
+79-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-83
 80            android:enabled="true"
-80-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-35
+80-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-35
 81            android:exported="false" />
-81-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+81-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
 82        <service
-82-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-22:72
+82-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-22:72
 83            android:name="dev.fluttercommunity.plus.androidalarmmanager.AlarmService"
-83-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-86
+83-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-86
 84            android:exported="false"
-84-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+84-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
 85            android:permission="android.permission.BIND_JOB_SERVICE" />
-85-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-69
+85-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-69
 86
 87        <receiver
-87-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-26:40
+87-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-26:40
 88            android:name="dev.fluttercommunity.plus.androidalarmmanager.AlarmBroadcastReceiver"
-88-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-96
+88-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-96
 89            android:exported="false" />
-89-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-37
+89-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-37
 90        <receiver
-90-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:27:9-34:20
+90-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:27:9-34:20
 91            android:name="dev.fluttercommunity.plus.androidalarmmanager.RebootBroadcastReceiver"
-91-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-97
+91-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-97
 92            android:enabled="false"
-92-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-36
+92-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-36
 93            android:exported="false" >
-93-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-37
+93-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-37
 94            <intent-filter>
-94-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-33:29
+94-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-33:29
 95                <action android:name="android.intent.action.BOOT_COMPLETED" />
-95-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-79
-95-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-76
+95-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-79
+95-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:32:25-76
 96            </intent-filter>
 97        </receiver>
 98        <receiver
-98-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+98-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
 99            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
-99-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+99-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-91
 100            android:exported="false" />
-100-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+100-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
 101        <receiver
-101-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+101-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-21:40
 102            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
-102-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+102-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-97
 103            android:exported="false" />
-103-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+103-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
 104        <receiver
-104-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+104-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-31:20
 105            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
-105-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+105-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-101
 106            android:exported="false" >
-106-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+106-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
 107            <intent-filter>
-107-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+107-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-30:29
 108                <action android:name="android.intent.action.BOOT_COMPLETED" />
-108-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-79
-108-->[:alarm] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-76
+108-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-79
+108-->[:alarm] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\alarm\intermediates\merged_manifest\debug\AndroidManifest.xml:32:25-76
 109                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-109-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
-109-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+109-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-84
+109-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-81
 110                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-110-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
-110-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+110-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-82
+110-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:25-79
 111                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-111-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
-111-->[:flutter_local_notifications] /Users/aroshapunchihewa/Documents/iit/sdgp/sleepwellfronend/sleepwellfrontend/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+111-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-82
+111-->[:flutter_local_notifications] C:\Users\sasni\Documents\SDGP\Sleepwell-frontend\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:25-79
 112            </intent-filter>
 113        </receiver>
 114
 115        <uses-library
-115-->[androidx.window:window:1.0.0-beta04] /Users/aroshapunchihewa/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+115-->[androidx.window:window:1.0.0-beta04] C:\Users\sasni\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 116            android:name="androidx.window.extensions"
-116-->[androidx.window:window:1.0.0-beta04] /Users/aroshapunchihewa/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+116-->[androidx.window:window:1.0.0-beta04] C:\Users\sasni\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
 117            android:required="false" />
-117-->[androidx.window:window:1.0.0-beta04] /Users/aroshapunchihewa/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+117-->[androidx.window:window:1.0.0-beta04] C:\Users\sasni\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
 118        <uses-library
-118-->[androidx.window:window:1.0.0-beta04] /Users/aroshapunchihewa/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+118-->[androidx.window:window:1.0.0-beta04] C:\Users\sasni\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
 119            android:name="androidx.window.sidecar"
-119-->[androidx.window:window:1.0.0-beta04] /Users/aroshapunchihewa/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+119-->[androidx.window:window:1.0.0-beta04] C:\Users\sasni\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
 120            android:required="false" />
-120-->[androidx.window:window:1.0.0-beta04] /Users/aroshapunchihewa/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+120-->[androidx.window:window:1.0.0-beta04] C:\Users\sasni\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
 121
 122        <provider
-122-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/3fc716d9e813218eb1841fbd4ab368e3/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+122-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\sasni\.gradle\caches\transforms-3\3fc716d9e813218eb1841fbd4ab368e3\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
 123            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-123-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/3fc716d9e813218eb1841fbd4ab368e3/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+123-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\sasni\.gradle\caches\transforms-3\3fc716d9e813218eb1841fbd4ab368e3\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
 124            android:authorities="com.example.sleepwellfrontend.lifecycle-process"
-124-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/3fc716d9e813218eb1841fbd4ab368e3/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+124-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\sasni\.gradle\caches\transforms-3\3fc716d9e813218eb1841fbd4ab368e3\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
 125            android:exported="false"
-125-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/3fc716d9e813218eb1841fbd4ab368e3/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+125-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\sasni\.gradle\caches\transforms-3\3fc716d9e813218eb1841fbd4ab368e3\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
 126            android:multiprocess="true" />
-126-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/aroshapunchihewa/.gradle/caches/transforms-3/3fc716d9e813218eb1841fbd4ab368e3/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+126-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\sasni\.gradle\caches\transforms-3\3fc716d9e813218eb1841fbd4ab368e3\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
 127    </application>
 128
 129</manifest>
