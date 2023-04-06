@@ -447,7 +447,7 @@ awakeTimeMin=awakeTime~/60;
                                //print(stringList);
                               String string = stringList.join(', ');
                               //showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+string),));
-                              showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+stringList.toString()),));
+                             // showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+stringList.toString()),));
                             btnStop();},
                       icone: Icons.stop,
                       buttonText: "Stop Sleep Tracking",
@@ -469,7 +469,7 @@ awakeTimeMin=awakeTime~/60;
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ElevatedButton(
-                            onPressed: btnStart,
+                            onPressed: (){},
                             child: Icon( 
                               Icons.sentiment_satisfied_alt_outlined,
                               color: Colors.black,
@@ -483,7 +483,7 @@ awakeTimeMin=awakeTime~/60;
                           ),
                           SizedBox(width: 15,),
                           ElevatedButton(
-                            onPressed: btnStop,
+                            onPressed: (){},
                             child: Icon( 
                               Icons.sentiment_dissatisfied ,
                               color: Colors.black,
@@ -497,16 +497,9 @@ awakeTimeMin=awakeTime~/60;
                           SizedBox(width: 15,),
                           ElevatedButton(
                             //onPressed: ()  {print("wada oiiiiii");},
-                            onPressed: ()async {
-                               List<String> stringList=await sendRequest(array2D);
-                               //print(array2D);
-                               //print(stringList);
-                              String string = stringList.join(', ');
-                              //showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+string),));
-                              showDialog(context: context, builder: (context)=>AlertDialog(content: Text("hihih"+stringList.toString()),));
-                            },
+                            onPressed: (){},
                             child: Icon( 
-                              Icons.close,
+                              Icons.sentiment_very_dissatisfied,
                               color: Colors.black,
                               size: 44,
                             ),
